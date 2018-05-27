@@ -61,6 +61,16 @@ p {
   color: #716c6c;
 }
 
+p.quote {
+  font-size: 1.8rem;
+  text-align: center;
+  }
+
+p.results {
+  font-size: 1.8rem;
+  color: #4b4b4b;
+}
+
 h4 {
   font-size: 1.6rem;
   line-height: 2rem;
@@ -128,7 +138,7 @@ h5 {
   list-style-type: square;
 }
 
-.ebites-mockup, .sk2-mockup, .blocbox-mockup{
+.ebites-mockup, .sk2-mockup, .blocbox-mockup, .self-serve{
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -139,6 +149,12 @@ h5 {
 .sk2-mockup, .blocbox-mockup {
   width: 80%;
 }
+
+.self-serve {
+  width: 10%;
+  padding-bottom: 0;
+}
+
 
 .blocbox-mockup {
   padding-bottom: 0;
@@ -168,6 +184,7 @@ hr {
 .flex-grid-thirds .col {
   padding-left: 4rem;
   padding-right: 4rem;
+  padding-bottom: 4rem;
   width: 100%;
   margin-top: 4rem;
 }
@@ -255,13 +272,33 @@ a.text-link:active {
   text-decoration: underline;
 }
 
+.text-link {
+  display: block;
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.sk2architects {
+  display: inline-flex;
+  text-align: center;
+  padding-bottom: 0;
+}
+
+.moodboard {
+  text-align: left;
+}
+
+.research {
+  margin-top: 4rem;
+}
+
 section {
   background-color: #E8E8E8;
   color: #000;
 }
 
 a {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   color: #393939;
   align-items:center;
   justify-content:right;
@@ -283,7 +320,7 @@ body {
 }
 
 .logo {
-  font-size: 1.8rem;
+  font-size: 2rem;
   color: #393939;
   font-family: museo-sans, sans-serif;
   font-style: normal;
@@ -324,6 +361,15 @@ body {
   padding-top: 15rem;
 }
 
+ .about{
+  background-color: #f8f8f8;
+}
+
+ .about-h5 {
+  text-align: left;
+  margin-top: 0;
+ }
+
 .container {
   background-color: #f8f8f8;
   display: grid;
@@ -359,6 +405,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   margin-top: 2rem;
+  margin-bottom: 4rem;
 }
 
 .button-link {
@@ -376,6 +423,14 @@ ul.comparance {
   color: #716c6c;
 }
 
+.paragraph-list.task {
+  list-style:none;
+}
+
+.fa-check-circle {
+  color: #6ebca1;
+}
+
 .comparance {
   font-family: europa, sans-serif;
   font-style: normal;
@@ -385,6 +440,61 @@ ul.comparance {
   font-size: 1.6rem;
   color: #716c6c;
   padding-top: 4rem;
+}
+
+.bio {
+  padding: 4rem;
+}
+
+.survey {
+  max-width: 60rem;
+  padding: 1rem;
+}
+
+.icon {
+  width: 6rem;
+  display: block;
+  margin: auto;
+}
+
+.full-width {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  background: url(event-bites-background.png);
+  background-attachment: fixed;
+  background-color: hsla(0,0%,100%,0.70);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:2rem;
+}
+
+.sk2arch {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  background: url(sk2-background.png);
+  background-attachment: fixed;
+  background-color: hsla(0,0%,100%,0.70);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:2rem;
+}
+
+.blocbox {
+  padding-left: 20rem;
+  padding-right: 20rem;
+  background: url(blocbox-background.jpg);
+  background-attachment: fixed;
+  background-color: hsla(0,0%,100%,0.70);
+  background-blend-mode: overlay;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top:2rem;
+}
+
+.github {
+  display: inline-flex;
 }
 
 .media {
@@ -450,6 +560,7 @@ ul.comparance {
   font-size: 1.4rem;
   margin-top: 1rem;
   font-weight: 300;
+  text-align: center;
 }
 
 .menu-btn div {
@@ -482,6 +593,7 @@ ul.comparance {
 	display: block !important;
   width: 2rem;
   text-align: center;
+  padding-top: 2rem;
 }
 
 .mobile-nav {
@@ -533,6 +645,10 @@ ul.comparance {
     padding:0;
     margin-right: 0;
     margin-top: 0;
+    line-height: 4rem;
+  }
+
+  a.logo {
     line-height: 3rem;
   }
 
@@ -562,6 +678,10 @@ ul.comparance {
     font-weight: 500;
     padding: 1rem 1rem;
   }
+
+  .bio {
+    padding: 0;
+  }
 }
 
 @media screen and (max-width: 1200px) {
@@ -574,6 +694,27 @@ ul.comparance {
     }
   }
 
+  .grubhub, .doordash, .ubereats {
+    width:20%;
+  }
+
+  .bio {
+    padding-bottom: 0;
+    padding-top: 4rem;
+  }
+
+  .abt {
+    padding-top: 2rem;
+  }
+
+  .full-width {
+    padding-right: 4rem;
+    padding-left: 4rem;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+
   .flex-container {
     display: block;
   .event-bites {
@@ -584,9 +725,5 @@ ul.comparance {
     width: 100%;
     flex-grow: 1;
    }
-  }
-
-  .grubhub, .doordash, .ubereats {
-    width:20%;
   }
 }
